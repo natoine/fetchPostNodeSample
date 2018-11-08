@@ -7,7 +7,7 @@ module.exports = function(app, express)
 
     mainRoutes.get('/', function(req, res)
     {
-        res.send("hello world")
+        res.render('index')
     })
 
         // apply the routes to our application
