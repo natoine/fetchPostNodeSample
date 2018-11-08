@@ -10,6 +10,11 @@ module.exports = function(app, express)
         res.render('index')
     })
 
+    mainRoutes.post('/fetchpost', function(req, res){
+    	console.log('received a post on /fetchpost')
+    	res.redirect('/')
+    })
+
         // apply the routes to our application
     app.use('/', mainRoutes)
 
