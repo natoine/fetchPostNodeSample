@@ -18,6 +18,10 @@
 sendpostfetch = function()
 {
 	console.log("will send a fetch request")
+	fetch('/fetchpost', {
+  		method: 'POST',
+  		body: 'title=hello&message=world'
+	})
 }
 
 </script>
