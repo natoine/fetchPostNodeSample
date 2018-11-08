@@ -4,7 +4,8 @@ const port     = process.env.PORT || 8080
 const express  = require('express')
 const app      = express()
 const bodyParser   = require('body-parser')
-app.use(bodyParser())
+app.use(bodyParser.json())
+//app.use(bodyParser())
 
 const morgan       = require('morgan')
 app.use(morgan('dev')) // log every request to the console

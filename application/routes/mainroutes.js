@@ -12,6 +12,10 @@ module.exports = function(app, express)
 
     mainRoutes.post('/fetchpost', function(req, res){
     	console.log('received a post on /fetchpost')
+    	body = req.body
+    	console.log("body : " + body)
+    	console.log("body.keys : " + Object.keys(body))
+    	console.log("body.email : " + body.email)
     	res.redirect('/')
     })
 
